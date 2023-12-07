@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Añadido para que los paddings no afecten al ancho total */
+    font-size: 0.8vw;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+.izq {
+    width: 20%;
+    padding-inline: 3vw;
+    padding-block: 10vw;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column; /* Añadido para alinear verticalmente los elementos */
+    justify-content: center; /* Añadido para centrar verticalmente los elementos */
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 253, 253);
+    flex: 1; /* Hace que el contenedor derecho tome el resto del espacio disponible */
+    overflow: auto; /* Añadido para permitir el desplazamiento cuando el contenido es más grande que la pantalla */
+}
+
+.nav ul,
+.proj ul,
+.redes ul {
+    margin-bottom: 5vw; /* Reducido para compensar el espacio extra del nuevo diseño */
+}
+
+.proj p,
+.redes p {
+        margin-bottom: 1vw;
+    }
+.redes ul li {
+            display: inline-block;
+            margin-right: 0.5vw;
+            @media (max-width: 1000px) {
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+.der {
+    width: 70%;
+    padding: 1vw; /* Alineado con el padding de la izquierda */
+    display: flex;
+    justify-content: center; /* Añadido para centrar verticalmente la imagen */
+    align-items: center;
+}
+#index-width-id {
+    width: 50%;
+}
+
+.context {
+    color: rgb(100, 100, 100);
+    line-height: 1.2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.2vw;
+    display: block;
+    margin-bottom: 1vw;
+}
+
+.wrapper {
+    height: 100vh;
+    
+    line-height: 1.2vw;
+    text-align: center;
+    text-justify: inter-word;
+}
+.center-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-text {
+    cursor: pointer;
+  }
+  
+  .copy-message {
+    display: none;
+    color: green;
+  }
+
+  .copy-container {
+    display: inline-block;
+}
+
+
+.eng {
+    color: rgb(101, 100, 100);
+}
+
+
+
+
+
+
+.pack {
+    display: flex;
+    width: 49.3%;
+    gap: 1vw;
+}
+
+
+.phone-ad1, .phone-ad2 {
+    display: none;
+}
+.cara {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1260px) {
+    * {
+        font-size: 1.2vw;
+    }
+    .izq {
+        width: 30%;
+    }
+    .der {
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+    * {
+        font-size: 1.5vw;
+    }
+}
+
+
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .izq {
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+
+    .izq .nav, .proj, .redes {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vw;
+    }
+    .proj p, .redes p{
+        position: absolute;
+        transform: translateY(-4vw);
+    }
+    .nav ul li {
+        margin-bottom: 1vw;
+    }
+    .redes ul li {
+        display: inline;
+        margin-right: 1vw;
+    }
+    .redes {
+        margin-top: 7vw;
+        margin-bottom: -5vw;
+    }
+
+
+    .phone-display-none {
+        display: none;
+    }
+    .phone-ad1 {
+        position: absolute;
+        width: 350px;
+        display: block;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+    .phone-ad1 p {
+        border-bottom: 2px black dotted;
+        transform: translateY(6vw);
+    }
+
+
+
+    .proj ul{
+        display: none;
+    }
+    .phone-ad2 {
+        position: absolute;
+        width: 350px;
+        display: block;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+    .phone-ad2 p {
+        border-bottom: 2px black dotted;
+        transform: translateY(2vw);
+    }
+
+    .der {
+        display: block;
+    }
+    #index-width-id {
+        width: 100%;
+    }
+    .der img {
+        max-width: 100%;
+        height:auto;
+    }
+    .center-wrapper {
+        height: auto;
+    }
+    .wrapper {
+        height: auto;
+    }
+    .cara {
+        display: block;
+        margin-top: 10vw;
+    }
+
+}
