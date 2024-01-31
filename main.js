@@ -16,7 +16,7 @@ function copyToClipboard(element) {
     copyMessage.style.display = 'inline';
     setTimeout(() => {
         copyMessage.style.display = 'none';
-    }, 2500); // Oculta el mensaje después de 1.5 segundos
+    }, 3500); // Oculta el mensaje después de 1.5 segundos
 }
 
 

@@ -31,9 +31,11 @@ body {
     overflow: auto; /* Añadido para permitir el desplazamiento cuando el contenido es más grande que la pantalla */
 }
 
+
 .nav ul,
 .proj ul,
 .redes ul {
+    /*outline: black 1px solid;*/
     margin-bottom: 5vw; /* Reducido para compensar el espacio extra del nuevo diseño */
 }
 
@@ -105,7 +107,7 @@ body {
 
 
 .eng {
-    color: rgb(101, 100, 100);
+    color: rgb(175, 175, 175);
 }
 
 
@@ -213,7 +215,9 @@ body {
     }
 
 
-
+    #proj_title {
+        display: none;
+    }
     .proj ul{
         display: none;
     }
